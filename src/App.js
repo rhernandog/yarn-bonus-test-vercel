@@ -1,7 +1,17 @@
+import { useEffect } from 'react';
+import gsap from "gsap";
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+gsap.registerPlugin(ScrollSmoother);
+
+function App () {
+  useEffect(() => {
+    console.log(ScrollSmoother);
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
