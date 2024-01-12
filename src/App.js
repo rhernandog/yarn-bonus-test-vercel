@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollSmoother);
 
 function App () {
   useEffect(() => {
-    console.log(ScrollSmoother);
+    console.log("ScrollSmoother Version:", ScrollSmoother.version);
   }, []);
 
   return (
